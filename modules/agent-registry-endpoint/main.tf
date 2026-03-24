@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-data "google_agent_registry_endpoint" "endpoint" {
+data "google_agent_registry_endpoint" "default" {
   provider    = google-nightly
   project     = var.project_id
   location    = var.location

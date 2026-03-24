@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-data "google_agent_registry_mcp_server" "mcp_server" {
+data "google_agent_registry_mcp_server" "default" {
   provider   = google-nightly
   project    = var.project_id
   location   = var.location
