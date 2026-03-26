@@ -15,7 +15,11 @@
  */
 
 data "google_agent_registry_endpoint" "default" {
+  provider    = google-nightly
   project     = var.project_id
   location    = var.location
-  filter = var.filter
+  
+  # Note: Use the system-generated endpoint_id or filter
+  endpoint_id = var.endpoint_id
+  filter      = var.filter
 }

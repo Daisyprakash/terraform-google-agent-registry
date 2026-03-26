@@ -15,7 +15,11 @@
  */
 
 data "google_agent_registry_mcp_server" "default" {
-  project       = var.project_id
-  location      = var.location
-  filter = var.filter
+  provider   = google-nightly
+  project    = var.project_id
+  location   = var.location
+  
+  # Support for both direct ID or AIP-160 filter
+  mcp_server_id = var.mcp_server_id
+  filter        = var.filter
 }
