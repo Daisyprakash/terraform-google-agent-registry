@@ -55,7 +55,7 @@ spec:
         varType: string
         connections:
           - source:
-              source: github.com/GoogleCloudPlatform/terraform-google-agent-registry//modules/agent-registry-service
+              source: github.com/Daisyprakash/terraform-google-agent-registry//modules/agent-registry-service
               version: ">= 0.0.8"
             spec:
               outputExpr: discovery_filter
@@ -68,7 +68,7 @@ spec:
         defaultValue: []
         connections:
         - source:
-            source: github.com/GoogleCloudPlatform/terraform-google-agent-registry//modules/agent-registry-service
+            source: github.com/Daisyprakash/terraform-google-agent-registry//modules/agent-registry-service
             version: ">= 0.0.8"
           spec:
             outputExpr: "[id]"
