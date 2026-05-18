@@ -104,12 +104,12 @@ spec:
               source: github.com/Daisyprakash/terraform-google-vertex-ai//modules/agent-engine-nightly
               version: ">= 0.6.1"
             spec:
-              outputExpr: "20s"
+              outputExpr: "\"20s\""
           - source:
               source: github.com/GoogleCloudPlatform/terraform-google-vertex-ai//modules/agent-engine
               version: ">= 0.6.1"
             spec:
-              outputExpr: "20s"
+              outputExpr: "\"20s\""
     outputs:
       - name: agent_display_name
         description: The display name of the Agent.
