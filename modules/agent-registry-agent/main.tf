@@ -15,6 +15,7 @@
  */
 
 resource "time_sleep" "wait_for_auto_registration_for_agent_in_registry" {
+  provider        = time
   create_duration = var.wait_time
   depends_on      = [var.module_depends_on]
 }
