@@ -67,7 +67,7 @@ spec:
               outputExpr: discovery_filter
               inputPath: filter
           - source:
-              source: github.com/Daisyprakash/terraform-google-vertex-ai//modules/agent-engine-nightly
+              source: github.com/GoogleCloudPlatform/terraform-google-vertex-ai//modules/agent-engine-nightly
               version: ">= 5.1.0"
             spec:
               outputExpr: discovery_filter
@@ -91,7 +91,7 @@ spec:
             spec:
               outputExpr: "[reasoning_engine_id]"
           - source:
-              source: github.com/Daisyprakash/terraform-google-vertex-ai//modules/agent-engine-nightly
+              source: github.com/GoogleCloudPlatform/terraform-google-vertex-ai//modules/agent-engine-nightly
               version: ">= 5.1.0"
             spec:
               outputExpr: "[reasoning_engine_id]"
@@ -101,7 +101,7 @@ spec:
         defaultValue: 0s
         connections:
           - source:
-              source: github.com/Daisyprakash/terraform-google-vertex-ai//modules/agent-engine-nightly
+              source: github.com/GoogleCloudPlatform/terraform-google-vertex-ai//modules/agent-engine-nightly
               version: ">= 0.6.1"
             spec:
               outputExpr: "\"20s\""
