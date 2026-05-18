@@ -16,6 +16,7 @@
 
 resource "time_sleep" "wait_for_auto_registration_for_agent_in_registry" {
   create_duration = var.wait_time
+  depends_on = [var.module_depends_on]
 }
 
 data "google_agent_registry_agent" "default" {
@@ -24,5 +25,5 @@ data "google_agent_registry_agent" "default" {
   location   = var.location
   agent_id   = var.agent_id
   filter     = var.filter
-  depends_on = [var.module_depends_on, time_sleep.wait_for_auto_registration_for_agent_in_registry]
+  depends_on = [time_sleep.wait_for_auto_registration_for_agent_in_registry]
 }
